@@ -1,0 +1,52 @@
+
+.me  {
+	height:20px;
+	width: 20px;
+	position: fixed;
+	left: 49%;
+	bottom: 230px;
+	z-index: 20000;
+}
+
+.me path, line {
+	-webkit-animation-name: show-poo;
+	        animation-name: show-poo;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
+	-webkit-animation-delay: 21s;
+	        animation-delay: 21s;
+	-webkit-animation-duration: 0.1s;
+	        animation-duration: 0.1s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	fill: rgba(0,0,0,0);
+	stroke: rgba(0,0,0,0);
+}
+
+
+
+@-webkit-keyframes show-poo {
+	0% {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(0,0,0,0);
+	}
+	100% {
+		fill: #ffaaaa;
+		stroke: white;
+	}
+}
+
+
+
+@keyframes show-poo {
+	0% {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(0,0,0,0);
+	}
+	100% {
+		fill: #ffaaaa;
+		stroke: white;
+	}
+}

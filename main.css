@@ -1,0 +1,55 @@
+body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: black;	
+	background-size: 100% 100%;
+	-webkit-animation-duration: 20s;
+	        animation-duration: 20s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-name: night-fall;
+	        animation-name: night-fall;
+
+}
+
+
+@-webkit-keyframes night-fall {
+	0% {
+		background-color: skyblue;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+
+
+@keyframes night-fall {
+	0% {
+		background-color: skyblue;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+
+
+#abc {
+	height: 100vh;
+	-webkit-animation-name: next-page;
+	        animation-name: next-page;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: 30s;
+	        animation-delay: 30s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+
+}
+

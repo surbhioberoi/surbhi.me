@@ -1,0 +1,239 @@
+.spaceship {
+	height: 150;
+	width: 150;
+	position: absolute;
+	top: -300px;
+	left:40%;
+	-webkit-animation-name: spaceship-motion;
+	        animation-name: spaceship-motion;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+	-webkit-animation-duration: 10s;
+	        animation-duration: 10s;
+	-webkit-animation-delay: 15s;
+	        animation-delay: 15s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1; 
+	-webkit-animation-fill-mode: forwards; 
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spaceship-motion {
+	0% {
+		top: -300px;
+		left: 40%;
+	}
+	20% {
+		top: 400px;
+		left: 60%;
+	}
+	40% {
+		top: 400px;
+		left: 40%;
+	}
+	60% {
+		top: 100px;
+		left: 40%;
+	}
+	70% {
+		top: 100px;
+		left: 39%;
+	}
+	80% {
+		top: 100px;
+		left: 38%;
+	}
+	90% {
+		top: 100px;
+		left: 39%;
+	}
+	100% {
+		top: 100px;
+		left: 40%;
+	}
+}
+
+@keyframes spaceship-motion {
+	0% {
+		top: -300px;
+		left: 40%;
+	}
+	20% {
+		top: 400px;
+		left: 60%;
+	}
+	40% {
+		top: 400px;
+		left: 40%;
+	}
+	60% {
+		top: 100px;
+		left: 40%;
+	}
+	70% {
+		top: 100px;
+		left: 39%;
+	}
+	80% {
+		top: 100px;
+		left: 38%;
+	}
+	90% {
+		top: 100px;
+		left: 39%;
+	}
+	100% {
+		top: 100px;
+		left: 40%;
+	}
+}
+
+
+#spaceship-light1 {
+	-webkit-animation-name: toggle-lights-red;
+	        animation-name: toggle-lights-red;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+#spaceship-light2 {
+	-webkit-animation-name: toggle-lights-blue;
+	        animation-name: toggle-lights-blue;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: 0.3s;
+	        animation-delay: 0.3s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+#spaceship-light3 {
+	-webkit-animation-name: toggle-lights-green;
+	        animation-name: toggle-lights-green;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes toggle-lights-red {
+	0% {
+		fill: #FF4136;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #FF4136;
+	}
+}
+
+@keyframes toggle-lights-red {
+	0% {
+		fill: #FF4136;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #FF4136;
+	}
+}
+
+
+@-webkit-keyframes toggle-lights-blue {
+	0% {
+		fill: #0074D9;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #0074D9;
+	}
+}
+
+
+@keyframes toggle-lights-blue {
+	0% {
+		fill: #0074D9;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #0074D9;
+	}
+}
+
+@-webkit-keyframes toggle-lights-green {
+	0% {
+		fill: #01FF70;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #01FF70;
+	}
+}
+
+@keyframes toggle-lights-green {
+	0% {
+		fill: #01FF70;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #01FF70;
+	}
+}
+
+#flashlight {
+	z-index: 1000;
+	fill: rgba(0,0,0,0);
+	stroke: rgba(0,0,0,0);
+	-webkit-animation-name: show-flash;
+	        animation-name: show-flash;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: 20s;
+	        animation-delay: 20s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show-flash {
+	0% {
+		fill: rgba(0,0,0,0);
+	}
+	100% {
+		fill: url(#svg_5);
+	}
+}
+
+@keyframes show-flash {
+	0% {
+		fill: rgba(0,0,0,0);
+	}
+	100% {
+		fill: url(#svg_5);
+	}
+}

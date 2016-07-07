@@ -1,0 +1,39 @@
+.moon {
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-name: moon-disappear;
+	        animation-name: moon-disappear;
+	fill:#eee;
+	stroke:#eee;
+}
+
+@-webkit-keyframes moon-disappear {
+	0% {
+		fill:skyblue;
+		stroke:skyblue;
+	
+	}
+	100% {
+		fill:#eee;
+		stroke:#eee;
+
+	}
+}
+
+@keyframes moon-disappear {
+	0% {
+		fill:skyblue;
+		stroke:skyblue;
+	
+	}
+	100% {
+		fill:#eee;
+		stroke:#eee;
+
+	}
+}
+

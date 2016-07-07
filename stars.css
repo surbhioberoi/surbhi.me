@@ -1,0 +1,161 @@
+#star1 {
+	position: absolute;
+	top: 10px;
+	right: 10%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star2 {
+	position: absolute;
+	top: 40px;
+	left: 20%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star3 {
+	position: absolute;
+	top: 80px;
+	left: 30%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star4 {
+	position: absolute;
+	top: 65px;
+	left: 45%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star5 {
+	position: absolute;
+	top: 90px;
+	left: 60%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star6 {
+	position: absolute;
+	top: 80px;
+	left: 70%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star7 {
+	position: absolute;
+	top: 60px;
+	left: 65%;
+	height: 25px;
+	width: 25px;	
+}
+
+.star-toggle {
+	-webkit-animation-name: star-disappear;
+	        animation-name: star-disappear;
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	fill: white;
+}
+
+
+@-webkit-keyframes star-disappear {
+	0% {
+		fill:skyblue;
+		stroke:skyblue;
+	
+	}
+	100% {
+		fill:#eee;
+		stroke:#eee;
+
+	}
+}
+
+
+@keyframes star-disappear {
+	0% {
+		fill:skyblue;
+		stroke:skyblue;
+	
+	}
+	100% {
+		fill:#eee;
+		stroke:#eee;
+
+	}
+}
+
+
+.star {
+	-webkit-animation-name: blink-star;
+	        animation-name: blink-star;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: 15s;
+	        animation-delay: 15s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes blink-star {
+	0% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,0.7) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	} 
+	50% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.7) 0%, rgba(219,219,219,0.3) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	}
+	100% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.3) 0%, rgba(219,219,219,0) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+
+	}
+}
+
+
+@keyframes blink-star {
+	0% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,0.7) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	} 
+	50% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.7) 0%, rgba(219,219,219,0.3) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	}
+	100% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.3) 0%, rgba(219,219,219,0) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+
+	}
+}
+
+
+@-webkit-keyframes show-star {
+	0% {
+		display: none;
+	}
+	50% {
+		display: block;
+	}
+	100% {
+		display: none;
+	}
+}
+
+
+@keyframes show-star {
+	0% {
+		display: none;
+	}
+	50% {
+		display: block;
+	}
+	100% {
+		display: none;
+	}
+}

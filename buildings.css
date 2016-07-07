@@ -1,0 +1,51 @@
+.buildings {
+	position: fixed;
+	bottom: 0;
+	height: 160px;
+	width: 100vw;
+}
+
+.buildings svg {
+	height: 160px !important;
+	width: 100vw !important;
+}
+
+
+.buildings .windows rect {
+	fill: rgba(255,255,255,0.3);
+	animation-name: switch-on;
+	animation-timing-function: ease;
+	animation-delay: 21s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.buildings #building2 rect {
+	animation-delay: 21.2s;
+}
+
+.buildings #building3 rect {
+	animation-delay: 21.4s;
+}
+
+.buildings #building4 rect {
+	animation-delay: 21.6s;
+}
+
+.buildings #building5 rect {
+	animation-delay: 21.8s;
+}
+
+.buildings #building6 rect {
+	animation-delay: 22s;
+}
+
+@keyframes switch-on {
+	0% {
+		fill: rgba(255,255,255, 0.3);
+	}
+	100% {
+		fill: #FED605;
+	}
+}
+

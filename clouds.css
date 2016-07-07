@@ -1,0 +1,84 @@
+
+.bigCloud {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: 200px;
+	width: 300px;
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-name: floating-clouds;
+	        animation-name: floating-clouds;
+	z-index: 100;
+	opacity: 0.5;
+}
+
+
+.slowCloud {
+	top: 40px;
+	-webkit-animation-duration: 50s;
+	        animation-duration: 50s;
+	fill: #eee;
+}
+
+
+@-webkit-keyframes floating-clouds {
+	from {
+		-webkit-transform: translateX(-500px);
+	}
+	to {
+		-webkit-transform: translateX(1500px);
+	}
+}
+
+
+@keyframes floating-clouds {
+	from {
+		-webkit-transform: translateX(-500px);
+	}
+	to {
+		-webkit-transform: translateX(1500px);
+	}
+}
+
+.disappear {
+	-webkit-animation-duration: 20s;
+	        animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-name: cloud-disappear;
+	        animation-name: cloud-disappear;
+	fill: #333;
+	stroke: rgba(0,0,0,0);
+
+}
+
+
+@-webkit-keyframes cloud-disappear {
+	0% {
+		fill: white;
+	}
+
+	100% {
+		fill: #333;
+		stroke: #333;
+	}
+}
+
+
+@keyframes cloud-disappear {
+	0% {
+		fill: white;
+	}
+
+	100% {
+		fill: #333;
+		stroke: #333;
+	}
+}
