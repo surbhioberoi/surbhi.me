@@ -1,0 +1,462 @@
+body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: black;	
+	background-size: 100% 100%;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-name: night-fall;
+
+}
+
+.buildings {
+	position: fixed;
+	bottom: 0;
+	height: 160px;
+	width: 100vw;
+}
+
+.buildings svg {
+	height: 160px !important;
+	width: 100vw !important;
+}
+
+.bigCloud {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: 200px;
+	width: 300px;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-name: floating-clouds;
+	z-index: 100;
+	opacity: 0.5;
+}
+
+.disappear {
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-name: cloud-disappear;
+	fill: #333;
+	stroke: rgba(0,0,0,0);
+
+}
+
+.slowCloud {
+	top: 40px;
+	animation-duration: 50s;
+	fill: #eee;
+}
+
+.moon {
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-name: moon-disappear;
+	fill:#eee;
+	stroke:#eee;
+}
+
+#star1 {
+	position: absolute;
+	top: 10px;
+	right: 10%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star2 {
+	position: absolute;
+	top: 40px;
+	left: 20%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star3 {
+	position: absolute;
+	top: 80px;
+	left: 30%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star4 {
+	position: absolute;
+	top: 65px;
+	left: 45%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star5 {
+	position: absolute;
+	top: 90px;
+	left: 60%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star6 {
+	position: absolute;
+	top: 80px;
+	left: 70%;
+	height: 25px;
+	width: 25px;	
+}
+
+#star7 {
+	position: absolute;
+	top: 60px;
+	left: 65%;
+	height: 25px;
+	width: 25px;	
+}
+
+.star-toggle {
+	animation-name: moon-disappear;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	fill: white;
+}
+
+@keyframes show-star {
+	0% {
+		display: none;
+	}
+	50% {
+		display: block;
+	}
+	100% {
+		display: none;
+	}
+}
+
+.star {
+	animation-name: blink-star;
+	animation-duration: 1s;
+	animation-delay: 15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes blink-star {
+	0% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,1) 0%, rgba(219,219,219,0.7) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	} 
+	50% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.7) 0%, rgba(219,219,219,0.3) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+	}
+	100% {
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(226,226,226,0.3) 0%, rgba(219,219,219,0) 50%, rgba(209,209,209,0) 51%, rgba(254,254,254,0) 100%);
+
+	}
+}
+
+
+
+@keyframes floating-clouds {
+	from {
+		-webkit-transform: translateX(-500px);
+	}
+	to {
+		-webkit-transform: translateX(1500px);
+	}
+}
+
+@keyframes night-fall {
+	0% {
+		background-color: skyblue;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+
+@keyframes cloud-disappear {
+	0% {
+		fill: white;
+	}
+
+	100% {
+		fill: #333;
+		stroke: #333;
+	}
+}
+
+@keyframes moon-disappear {
+	0% {
+		fill:skyblue;
+		stroke:skyblue;
+	
+	}
+	100% {
+		fill:#eee;
+		stroke:#eee;
+
+	}
+}
+
+
+#abc {
+	height: 100vh;
+	animation-name: next-page;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-delay: 30s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+
+.spaceship {
+	height: 150;
+	width: 150;
+	position: absolute;
+	top: -300px;
+	left:40%;
+	animation-name: spaceship-motion;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;
+	animation-delay: 15s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes spaceship-motion {
+	0% {
+		top: -300px;
+		left: 40%;
+	}
+	20% {
+		top: 400px;
+		left: 60%;
+	}
+	40% {
+		top: 400px;
+		left: 40%;
+	}
+	60% {
+		top: 100px;
+		left: 40%;
+	}
+	70% {
+		top: 100px;
+		left: 39%;
+	}
+	80% {
+		top: 100px;
+		left: 38%;
+	}
+	90% {
+		top: 100px;
+		left: 39%;
+	}
+	100% {
+		top: 100px;
+		left: 40%;
+	}
+}
+
+
+#spaceship-light1 {
+	animation-name: toggle-lights-red;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+
+#spaceship-light2 {
+	animation-name: toggle-lights-blue;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	animation-iteration-count: infinite;
+}
+
+
+#spaceship-light3 {
+	animation-name: toggle-lights-green;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes toggle-lights-red {
+	0% {
+		fill: #FF4136;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #FF4136;
+	}
+}
+
+
+@keyframes toggle-lights-blue {
+	0% {
+		fill: #0074D9;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #0074D9;
+	}
+}
+
+@keyframes toggle-lights-green {
+	0% {
+		fill: #01FF70;
+	}
+	50% {
+		fill: white;
+	}
+	100% {
+		fill: #01FF70;
+	}
+}
+
+#flashlight {
+	z-index: 1000;
+	fill: rgba(0,0,0,0);
+	stroke: rgba(0,0,0,0);
+	animation-name: show-flash;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-delay: 20s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes show-flash {
+	0% {
+		fill: rgba(0,0,0,0);
+	}
+	100% {
+		fill: url(#svg_5);
+	}
+}
+
+
+.buildings .windows rect {
+	fill: rgba(255,255,255,0.3);
+	animation-name: switch-on;
+	animation-timing-function: ease;
+	animation-delay: 21s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.buildings #building2 rect {
+	animation-delay: 21.2s;
+}
+
+.buildings #building3 rect {
+	animation-delay: 21.4s;
+}
+
+.buildings #building4 rect {
+	animation-delay: 21.6s;
+}
+
+.buildings #building5 rect {
+	animation-delay: 21.8s;
+}
+
+.buildings #building6 rect {
+	animation-delay: 22s;
+}
+
+@keyframes switch-on {
+	0% {
+		fill: rgba(255,255,255, 0.3);
+	}
+	100% {
+		fill: #FED605;
+	}
+}
+
+.me  {
+	height:20px;
+	width: 20px;
+	position: fixed;
+	left: 49%;
+	bottom: 230px;
+	z-index: 20000;
+}
+
+.me path {
+	animation-name: show-poo;
+	animation-timing-function: ease;
+	animation-delay: 21s;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	fill: rgba(0,0,0,0);
+	stroke: rgba(0,0,0,0);
+}
+
+@keyframes show-poo {
+	0% {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(0,0,0,0);
+	}
+	100% {
+		fill: #ffaaaa;
+		stroke: white;
+	}
+}
+
+
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 5s linear;
+  animation-fill-mode:forwards;
+  fill: rgb(0,0,0,0);
+  stroke-width: 2;
+  stroke: rgb(255,255,255);
+}
+
+#path1 {
+	animation-delay: 21s;
+}
+
+#path2 {
+  animation-delay:22s;
+}
+#path3 {
+  animation-delay:23s;
+}
+#path4 {
+  animation-delay:24s;
+}
+#path5 {
+  animation-delay:24s;
+}
+#path6 {
+  animation-delay:23s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
