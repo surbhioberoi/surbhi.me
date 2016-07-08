@@ -25,19 +25,19 @@
 }
 
 .buildings #building3 rect {
-	animation-delay: 21.4s;
-}
-
-.buildings #building4 rect {
 	animation-delay: 21.6s;
 }
 
-.buildings #building5 rect {
+.buildings #building4 rect {
 	animation-delay: 21.8s;
 }
 
-.buildings #building6 rect {
+.buildings #building5 rect {
 	animation-delay: 22s;
+}
+
+.buildings #building6 rect {
+	animation-delay: 22.2s;
 }
 
 @keyframes switch-on {
