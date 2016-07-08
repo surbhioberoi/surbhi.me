@@ -15,29 +15,29 @@
 	fill: rgba(255,255,255,0.3);
 	animation-name: switch-on;
 	animation-timing-function: ease;
-	animation-delay: 21s;
+	animation-delay: 15s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 
 .buildings #building2 rect {
-	animation-delay: 21.2s;
+	animation-delay: 15.2s;
 }
 
 .buildings #building3 rect {
-	animation-delay: 21.6s;
+	animation-delay: 15.6s;
 }
 
 .buildings #building4 rect {
-	animation-delay: 21.8s;
+	animation-delay: 15.8s;
 }
 
 .buildings #building5 rect {
-	animation-delay: 22s;
+	animation-delay: 16s;
 }
 
 .buildings #building6 rect {
-	animation-delay: 22.2s;
+	animation-delay: 16.2s;
 }
 
 @keyframes switch-on {
